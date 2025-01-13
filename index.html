@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Himanshu Kumar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Himanshu Kumar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Himanshu Kumar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Himanshu Kumar</h1>
+        <p class="section__text__p2">Student and a Cybersecurity Enthusiast</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <a href="#contact" class="btn btn-color-1" onclick="toggleMenu()">Contact</a>
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/himanshu-kumar-324414230/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/PinguThePengiun'"
+          />
+        </div>
+        <iframe id="bee-iframe" src="https://lottie.host/embed/4038e956-c01f-406d-9fe8-c021f4250ca7/MuicZoeftJ.json"></iframe>
+      </div>
+      <!-- Color Picker Icon and Panel -->
+      <div id="color-panel" class="color-panel">
+        <div class="panel-header">
+          <h3>Background Color</h3>
+          <span class="close-btn" onclick="togglePanel()">&times;</span>
+        </div>
+        <div class="color-options">
+          <button class="color-btn" style="background-color: #ffffff;" onclick="changeColor('#ffffff')"></button>
+          <button class="color-btn" style="background-color: #f28b82;" onclick="changeColor('#f28b82')"></button>
+          <button class="color-btn" style="background-color: #fbbc04;" onclick="changeColor('#fbbc04')"></button>
+          <button class="color-btn" style="background-color: #34a853;" onclick="changeColor('#34a853')"></button>
+          <button class="color-btn" style="background-color: #4285f4;" onclick="changeColor('#4285f4')"></button>
+          <button class="color-btn" style="background-color: #b6a9f0;" onclick="changeColor('#b6a9f0')"></button>
+          <button class="color-btn" style="background-color: #747474;" onclick="changeColor('#747474')"></button>
+          <button class="color-btn" style="background-color: #ff84e0;" onclick="changeColor('#ff84e0')"></button>
+        </div>
+      </div>
+      <!-- Color Picker Icon -->
+      <div class="color-icon" onclick="togglePanel()">
+        <img src="https://img.icons8.com/color/48/000000/paint-palette.png" alt="Color Picker" />
+      </div> 
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1. Machine Learning Intern at Navodita Infotech<br />2. Cyber Security Intern at DigiQuanta</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Schooling From Kendriya Vidyalaya<br />B.Sc From HITAM</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a final-year B.Tech student in Computer Science at HITAM with a CGPA of 8.41/10. My internships at DigiQuanta and Navodita Infotech gave me hands-on experience in cybersecurity, log analysis, vulnerability assessment, and sentiment analysis using NLP. I’ve worked on impactful projects like a Smart Contract Security Analyzer using ML and the Jcrypt Tool for file encryption and image steganography, showcasing my skills in Python, cryptography, and data structures.
+In addition to technical proficiency, I bring strong communication, teamwork, and problem-solving abilities, gained through collaborative project development and practical challenges. My certifications, including a 4-star Python badge on HackerRank, reflect my commitment to continuous learning.
+I am eager to leverage my technical expertise and interpersonal skills to deliver innovative solutions and contribute meaningfully to your organization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Proficient in Python programming, with experience in developing robust applications, automation scripts, and data analysis using libraries</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Familiar with Basic front-end and back-end web development, including HTML and CSS.Adept at building responsive and user-friendly websites.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Strong understanding of various data structures such as arrays, linked lists, stacks, queues, trees, and graphs. Capable of implementing and optimizing algorithms for problem-solving.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced in designing and managing relational databases using MySQL. Proficient in writing complex queries, optimizing database performance, and ensuring data integrity and security.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Familiar with Linux operating systems, including command-line operations, and have implemented practical Ethical Hacking experiments.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Proficient in MongoDB, a NoSQL database, with experience in designing schema, querying data, and optimizing performance. Knowledgeable in working with MongoDB's framework.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-card">
+          <iframe src="https://lottie.host/embed/ae3fd272-81d5-462a-9694-3bf71b6f455e/n3mOSJJKSs.json"
+          frameborder="0" class="lottie-animation2"></iframe>
+          <h2>Hand-Cricket Game</h2>
+          <p>Utilized C to develop an interface for a childhood game popularly known as hand-cricket.</p>
+        </div>
+        <div class="project-card">
+          <iframe src="https://lottie.host/embed/8e019c26-4fe4-468d-b159-69a09cfc43ed/IZRX7luzip.json"
+          frameborder="0" class="lottie-animation"></iframe>
+          <h2>Smart Contract Security Analyser using ML</h2>
+          <p>Developed a machine learning framework using BiLSTM and CNN to automate vulnerability detection in Ethereum smart contracts, enhancing security and trust in blockchain technology.</p>
+        </div>
+        <div class="project-card">
+          <iframe src="https://lottie.host/embed/9b86140a-0384-4c5c-aa87-c6dc790fe503/gOnAnMjw0u.json"
+            frameborder="0" class="lottie-animation"></iframe>
+          <h2>Jcrypt Tool</h2>
+          <p>Built a Python-based GUI tool for encrypting and decrypting text, files, and images. It features multiple encryption techniques, image steganography, and a user-friendly interface with detailed sidebars.</p>
+        </div>
+      </div>
+    </section>      
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:himanshukumar71103@gmail.com">himanshu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/himanshu-kumar-324414230/">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="contact-animation">
+      <iframe src="https://lottie.host/embed/1f0d43f7-3a0d-412c-9e7e-5f8e5928ea51/68if4aikLl.lottie"
+        frameborder="0" class="lottie-animation3"></iframe>
+      </div>  
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Himanshu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
